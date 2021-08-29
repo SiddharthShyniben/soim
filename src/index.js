@@ -13,6 +13,9 @@ export async function generateImage(options) {
 		}`;
 	}
 	if (!options.path) options.path = 'shot.png';
+	if (!options.viewPort) options.viewPort = {width: 600};
+	if (!options.viewPort.width) options.viewPort.width = 600;
+	if (!options.viewPort.height) options.viewPort.height = 315;
 	if (!options.deviceScaleFactor) options.deviceScaleFactor = 2;
 
 	const browser = await puppeteer.launch();
