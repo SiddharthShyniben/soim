@@ -23,6 +23,7 @@
 	},
 	"homepage": "https://github.com/SiddharthShyniben/soim#readme",
 	"dependencies": {
+		"minimist": "^1.2.5",
 		"puppeteer": "^10.2.0"
 	}
 }
