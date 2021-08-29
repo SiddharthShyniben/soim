@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import minimist from 'minimist';
 import {generateImage} from '../src/index.js';
 
@@ -7,7 +8,7 @@ if (argv.p ?? true) argv.path = argv.p;
 if (argv.l ?? true) argv.link = argv.l;
 if (argv.i ?? true) argv.img = argv.i;
 if (argv.T ?? true) argv.tags = argv.T;
-argv.tags = argv.tags.split(',').map(str => str.trim());
+argv.tags = (argv.tags || '').split(',').map(str => str.trim());
 if (argv.t ?? true) argv.text = argv.t;
 if (argv.c ?? true) argv.caption = argv.c;
 if (argv.v ?? true) argv.verbose = argv.v;
