@@ -19,25 +19,25 @@ export async function generateImage(options) {
 	if (!options.deviceScaleFactor) options.deviceScaleFactor = 2;
 
 	const browser = await puppeteer.launch();
-	console.log('Launched');
+	if (options.verbose) console.log('Launched');
 
 	const page = await browser.newPage();
-	console.log('Opened page');
+	if (options.verbose) console.log('Opened page');
 
 	await page.goto(options.link);
-	console.log('Went to page');
+	if (options.verbose) console.log('Went to page: ', options.link);
 
 	await page.setViewport({
 		width: 600,
 		height: 315,
 		deviceScaleFactor: 2
 	});
-	console.log('Set viewport')
+	if (options.verbose) console.log('Set viewport details')
 
 	await page.screenshot({path: options.path})
-	console.log('Screenshotted');
+	if (options.verbose) console.log('Screenshotted');
 
 	await browser.close();
-	console.log('Done');
+	if (options.verbose) console.log('Done');
 }
 
