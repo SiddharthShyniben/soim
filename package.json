@@ -1,0 +1,25 @@
+{
+	"name": "soim",
+	"version": "1.0.0",
+	"description": "Social Image generator",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SiddharthShyniben/soim.git"
+	},
+	"keywords": [
+		"social",
+		"image",
+		"generator",
+		"content",
+		"posts"
+	],
+	"author": "SiddharthShyniben <siddharth.muscat@gmail.com> (https://github.com/SiddharthShyniben)",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/SiddharthShyniben/soim/issues"
+	},
+	"homepage": "https://github.com/SiddharthShyniben/soim#readme"
+}
