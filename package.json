@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {},
+	"bin": "bin/cli.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SiddharthShyniben/soim.git"
